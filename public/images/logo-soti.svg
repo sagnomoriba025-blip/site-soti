@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <!-- Dégradé de l'emblème -->
+    <linearGradient id="sotiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Dégradé anneau tech -->
+    <linearGradient id="ringGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+
+    <!-- Ombre douce -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#1D4ED8" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- 1. ICONE EMBLEME TECH / INGENIERIE -->
+    <g filter="url(#dropShadow)">
+      <!-- Hexagone / Cube d'ingénierie moderne -->
+      <polygon points="30,0 58,16 58,48 30,64 2,48 2,16" fill="url(#sotiGrad)" rx="4" />
+      
+      <!-- Lignes internes du cube / circuit technologique -->
+      <path d="M30,0 L30,64 M2,16 L30,32 L58,16 M2,48 L30,32 L58,48" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      
+      <!-- Puces nodales lumineuses (Réseaux / Télécom) -->
+      <circle cx="30" cy="32" r="4.5" fill="#ffffff" />
+      <circle cx="30" cy="0" r="3" fill="#60A5FA" />
+      <circle cx="58" cy="16" r="3" fill="#10B981" />
+      <circle cx="2" cy="16" r="3" fill="#93C5FD" />
+      <circle cx="30" cy="64" r="3" fill="#10B981" />
+
+      <!-- Arc orbital d'innovation (énergie / connectivité) -->
+      <path d="M -2,32 A 34,34 0 0,1 62,32" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 4" opacity="0.9"/>
+    </g>
+
+    <!-- 2. TYPOGRAPHIE MARQUE SoTI -->
+    <g transform="translate(75, 8)">
+      <!-- Nom principal "SoTI" -->
+      <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="1.5" fill="#FFFFFF">
+        So<tspan fill="#38BDF8">T</tspan><tspan fill="#10B981">I</tspan>
+      </text>
+
+      <!-- Petit point lumineux vert sur le I -->
+      <circle cx="68.5" cy="8" r="3" fill="#34D399" />
+
+      <!-- Baseline "SOCIÉTÉ DE TECHNOLOGIES & INGÉNIERIE" -->
+      <text x="1" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="700" letter-spacing="2" fill="#94A3B8">
+        INGÉNIERIE &amp; TÉLÉCOM • GUINÉE
+      </text>
+    </g>
+  </g>
+</svg>
