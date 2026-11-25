@@ -75,7 +75,10 @@ function LoginForm() {
             className="h-20 w-auto object-contain"
             priority
           />
-          <span className="text-[10px] tracking-widest text-blue-400 font-bold uppercase mt-2">
+          <span className="text-xs font-bold text-blue-400 animate-soti-blink mt-2 text-center">
+            Société de Technologies &amp; Ingénierie
+          </span>
+          <span className="text-[10px] tracking-widest text-slate-400 font-bold uppercase mt-1">
             Portail Administratif
           </span>
         </div>

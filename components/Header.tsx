@@ -59,15 +59,23 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo and Brand */}
-        <Link href="/" className="flex items-center space-x-3 group">
+        <Link href="/" className="flex items-center space-x-2.5 sm:space-x-3.5 group">
           <Image 
             src="/images/logo-soti.png" 
             alt="Logo SoTI - Société de Technologies & Ingénierie" 
             width={180}
             height={158}
-            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             priority
           />
+          <div className="flex flex-col justify-center border-l border-slate-300/40 dark:border-slate-700/60 pl-2.5 sm:pl-3">
+            <span className="text-[11px] sm:text-xs md:text-sm font-extrabold tracking-tight text-blue-600 dark:text-blue-400 animate-soti-blink leading-tight select-none">
+              Société de Technologies
+            </span>
+            <span className="text-[10px] sm:text-[11px] md:text-xs font-bold tracking-wider text-slate-700 dark:text-slate-300 animate-soti-blink leading-tight mt-0.5 select-none">
+              &amp; Ingénierie
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

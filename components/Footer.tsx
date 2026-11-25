@@ -37,7 +37,7 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="space-y-4">
-            <Link href="/" className="inline-block group">
+            <Link href="/" className="inline-flex items-center space-x-3 group">
               <Image 
                 src="/images/logo-soti.png" 
                 alt="Logo SoTI - Société de Technologies & Ingénierie" 
@@ -45,6 +45,14 @@ export default function Footer() {
                 height={158}
                 className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
+              <div className="flex flex-col justify-center border-l border-slate-700/60 pl-3">
+                <span className="text-xs sm:text-sm font-bold tracking-tight text-blue-400 animate-soti-blink leading-tight select-none">
+                  Société de Technologies
+                </span>
+                <span className="text-[11px] sm:text-xs font-semibold tracking-wider text-slate-300 animate-soti-blink leading-tight mt-0.5 select-none">
+                  &amp; Ingénierie
+                </span>
+              </div>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
               Votre Partenaire Technologique de Confiance. Ingénierie • Innovation • Performance.
