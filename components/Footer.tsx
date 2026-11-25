@@ -3,6 +3,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Mail, Phone, MapPin, ShieldCheck, ArrowUpRight } from 'lucide-react';
 
@@ -37,10 +38,11 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <Link href="/" className="inline-block group">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                src="/images/logo-soti.svg" 
+              <Image 
+                src="/images/logo-soti.png" 
                 alt="Logo SoTI - Société de Technologies & Ingénierie" 
+                width={180}
+                height={158}
                 className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </Link>

@@ -8,6 +8,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { Lock, Mail, Loader2, ArrowLeft, ShieldAlert, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function LoginForm() {
   const router = useRouter();
@@ -66,10 +67,15 @@ function LoginForm() {
           <span>Retour au site public</span>
         </Link>
         <div className="pt-4 flex flex-col items-center">
-          <span className="text-4xl font-black tracking-wider text-white leading-none">
-            SoTI
-          </span>
-          <span className="text-[10px] tracking-widest text-blue-400 font-bold uppercase mt-1">
+          <Image 
+            src="/images/logo-soti.png" 
+            alt="Logo SoTI" 
+            width={180}
+            height={158}
+            className="h-20 w-auto object-contain"
+            priority
+          />
+          <span className="text-[10px] tracking-widest text-blue-400 font-bold uppercase mt-2">
             Portail Administratif
           </span>
         </div>

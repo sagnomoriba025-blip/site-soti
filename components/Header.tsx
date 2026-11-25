@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, ArrowRight, Sun, Moon } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -59,11 +60,13 @@ export default function Header() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo and Brand */}
         <Link href="/" className="flex items-center space-x-3 group">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img 
-            src="/images/logo-soti.svg" 
+          <Image 
+            src="/images/logo-soti.png" 
             alt="Logo SoTI - Société de Technologies & Ingénierie" 
+            width={180}
+            height={158}
             className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            priority
           />
         </Link>
 
